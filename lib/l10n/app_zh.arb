@@ -74,6 +74,10 @@
   "shortWeekdayFri": "五",
   "shortWeekdaySat": "六",
   "shortWeekdaySun": "日",
+  "taskTypeTask": "任务",
+  "taskTypeDeadline": "截止日期",
+  "autostartOnBoot": "开机自启动",
+  "autostartOnBootSubtitle": "Windows 启动时自动启动",
   "aiAssistant": "AI 助手",
   "aiSettings": "AI 设置",
   "aiBaseUrl": "API 基础链接",
@@ -93,9 +97,5 @@
   "aiSettingsValidationError": "请先填写 API Base URL / API Key / Model",
   "aiTestSuccess": "模型测试成功，可正常调用",
   "dailyReminderTitle": "每日任务概览",
-  "dailyReminderBody": "今天您有 {count} 个待办任务。",
-  "taskTypeTask": "任务",
-  "taskTypeDeadline": "截止日期",
-  "autostartOnBoot": "开机自启动",
-  "autostartOnBootSubtitle": "Windows 启动时自动启动"
+  "dailyReminderBody": "今天您有 {count} 个待办任务。"
 }

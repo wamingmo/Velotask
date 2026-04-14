@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:package_info_plus/package_info_plus.dart';
@@ -179,15 +178,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   Future<void> _loadVersion() async {
     try {
-      final packageInfo = kIsWeb
-          ? PackageInfo(
-              appName: 'Velotask',
-              packageName: 'velotask',
-              version: 'web',
-              buildNumber: 'web',
-              buildSignature: '',
-            )
-          : await PackageInfo.fromPlatform();
+      final packageInfo = await PackageInfo.fromPlatform();
       if (mounted) {
         setState(() {
           _version = packageInfo.version;
